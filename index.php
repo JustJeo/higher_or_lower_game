@@ -4,6 +4,8 @@
         <?php include "sections/html_head.php" ?>
     </head>
     <body>
+        <!-- Content -->
+         <?php include "content/game.php" ?>
 
         <!-- Footer -->
         <?php include "sections/footer.php" ?>
