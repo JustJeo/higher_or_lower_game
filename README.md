@@ -27,6 +27,7 @@ Once the Player clicks on the "Start" button, this is what the playing field wil
 - JavaScript
 - PHP
 - AJAX
+- Bootstrap Vers 5.3
 
 ## Motivation
 I love video games and decided that I wanted to create one. It had been a while since I've made a web browser game and wanted to start with something simple and small. I told myself that if I could create this little game then I'd be capable of creating more complex games in the future.

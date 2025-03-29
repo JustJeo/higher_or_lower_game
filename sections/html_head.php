@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="author" content="Just Jeo" />    
-<meta name="description" content="A game where players try to guess if their number is higher or lower than the computer's card.">
+<meta name="description" content="A game where players try to guess if the next card drawn will be higher or lower.">
 
 <!-- Favicon icon -->
 <link rel="icon" type="image/png" href="assets/images/favicon.png">  
