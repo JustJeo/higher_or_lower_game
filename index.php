@@ -5,7 +5,7 @@
     </head>
     <body>
         <!-- Content -->
-         <?php include "content/landing.php" ?>
+         <?php include "content/game.php" ?>
 
         <!-- Footer -->
         <?php include "sections/footer.php" ?>
