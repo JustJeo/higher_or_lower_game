@@ -15,3 +15,8 @@ If the player is correct in their guess, they win the game. If the player is inc
 - Players who choose "Higher" and receive a card that is higher than the presented card will win.
 - Players who choose a button and receive a card opposite of their prediction will lose the game.
 - A "Play Again" button will appear when the game is over that players can click on to start the whole process over again.
+
+## Wireframing
+Once the Player clicks on the "Start" button, this is what the playing field will look like.
+
+![Wireframe](assets/images/higher_lower_wireframe.png)
