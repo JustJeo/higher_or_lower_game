@@ -28,3 +28,13 @@ Once the Player clicks on the "Start" button, this is what the playing field wil
 - PHP
 - AJAX
 
+### Motivation
+I love video games and decided that I wanted to create one. It had been a while since I've made a web browser game and wanted to start with something simple and small. I told myself that if I could create this little game then I'd be capable of creating more complex games in the future.
+
+### Future Development
+Once I reach the MVP of the game, what would be next for the future?
+
+I plan on having a few different game modes for this game. The "Beginner" or "Easy" mode will be the MVP version while a "VS" mode will consist of the player vs the computer. I also think about having a "Multiplayer" mode that branches off of the "VS" mode.
+
+### Play The Game!
+The game is currently under development and will be available to be played once MVP has been reached. Thank you for your patience and understanding.
