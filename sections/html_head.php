@@ -9,10 +9,7 @@
 <link rel="icon" type="image/png" href="assets/images/favicon.png">  
 
 <!-- Document Title -->
-    <title>Jeo's Higher Or Lower Game</title>
-
-<!-- File Connections -->
-<link rel="stylesheet" href="assets/css/main.css">
+<title>Jeo's Higher Or Lower Game</title>
 
 <!-- Font Family -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,5 +18,8 @@
 
 <!-- Bootstrap Ver 5.3 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/main.css">
 
 <!-- AYO! This is Jeo! -->
