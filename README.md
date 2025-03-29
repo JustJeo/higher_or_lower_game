@@ -20,3 +20,11 @@ If the player is correct in their guess, they win the game. If the player is inc
 Once the Player clicks on the "Start" button, this is what the playing field will look like.
 
 ![Wireframe](assets/images/higher_lower_wireframe.png)
+
+## Coding Tech and Languages
+- HTML
+- CSS
+- JavaScript
+- PHP
+- AJAX
+
