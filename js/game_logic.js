@@ -1,3 +1,15 @@
+// TOGGLE LIGHT MODE FX 
+function lightMode() {
+    document.body.classList.toggle("light-mode");
+};
+
+// DRAW A CARD
+// Chooses a number between 1-10
+function drawCard() {
+    let randomCard = Math.floor(Math.random() * 10 + 1);
+    document.getElementById("first_card").innerHTML = `${randomCard}`;
+};
+
 function startGameLogic() {
     console.log("Game Logic Starts")
 
@@ -6,6 +18,7 @@ function startGameLogic() {
     startGame.addEventListener("click", () => {
         document.getElementById("start_game_btn").style.display = "none";
         document.getElementById("game_play_container").style.display = "block";
+        drawCard();
     })
 
     // LIGHT MODE TOGGLE BTN
@@ -19,11 +32,5 @@ function startGameLogic() {
         console.error("Light mode button not found!"); // Debugging help
     }
 
-    console.log("Light Mode Button:", document.getElementById("light_mode_btn"));
-    console.log("Attaching event listener to light mode button...");
-};
 
-// TOGGLE LIGHT MODE FX 
-function lightMode() {
-    document.body.classList.toggle("light-mode");
 };
