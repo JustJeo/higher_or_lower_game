@@ -3,6 +3,18 @@
     font-family: 'Playpen Sans', cursive;
 }
 
+body {
+    padding: 1em 5em 10em;
+    background-color: gray;
+    color: white;
+}
+
+/* Buttons */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
 #game_title_container {
     margin: 100px 0px;
 }

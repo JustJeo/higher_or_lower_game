@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(data => document.getElementById("footer").innerHTML = data)
          ]).then(() => {
             console.log("All Sections loaded.");
-            startGameLogic();
+            setTimeout(startGameLogic, 100);
     });
 });
 
