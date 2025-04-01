@@ -3,7 +3,7 @@
     font-family: 'Playpen Sans', cursive;
 }
 
-#game_page div {
+#game_title_container {
     margin: 100px 0px;
 }
 
@@ -14,7 +14,7 @@
 
 /* Version Number & Slogan */
 #version_number_and_slogan {
-    padding: 50px 15px;
+    margin: 50px 15px;
 }
 
 #version_number_and_slogan small {
