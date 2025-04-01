@@ -7,6 +7,11 @@
     margin: 100px 25px;
 }
 
+/* Game Container */
+#game_play_container {
+    display: none;
+}
+
 /* Version Number & Slogan */
 #version_number_and_slogan {
     padding: 50px 15px;
