@@ -18,9 +18,10 @@ If the player is correct in their guess, they win the game. If the player is inc
 
 ## Wireframing
 Once the Player clicks on the "Start" button, this is what the playing field will look like.
-
 ![Wireframe](assets/images/wireframes/higher_lower_wireframe.png)
-![card_set](assets/images/wireframes/mvp_card_set.png)
+
+A random card will be pulled from the deck and displayed to the player. Once the player makes a selection, a new card from the remaining set will be drawn. Here is the full deck for the MVP
+![mvp_deck](assets/images/wireframes/mvp_card_deck.png)
 
 ## Coding Tech and Languages
 - HTML
