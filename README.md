@@ -19,7 +19,8 @@ If the player is correct in their guess, they win the game. If the player is inc
 ## Wireframing
 Once the Player clicks on the "Start" button, this is what the playing field will look like.
 
-![Wireframe](assets/images/higher_lower_wireframe.png)
+![Wireframe](assets/images/wireframes/higher_lower_wireframe.png)
+![card_set](assets/images/wireframes/mvp_card_set.png)
 
 ## Coding Tech and Languages
 - HTML
