@@ -27,8 +27,6 @@ A random card will be pulled from the deck and displayed to the player. Once the
 - HTML
 - CSS
 - JavaScript
-- PHP
-- AJAX
 - Bootstrap Vers 5.3
 
 ## Motivation
