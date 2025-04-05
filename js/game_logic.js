@@ -23,7 +23,7 @@ function lightModeCards() {
 function drawCard() {
     let randomCard = Math.floor(Math.random() * 3 + 1);
     if (randomCard == 1) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent.png" alt="">
+        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent_light.png" alt="">
         <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent_dark.png" alt="">`;
     } else {
         document.getElementById("first_card").innerHTML = `${randomCard}`;
