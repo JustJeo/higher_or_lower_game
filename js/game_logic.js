@@ -3,6 +3,21 @@ function lightMode() {
     document.body.classList.toggle("light-mode");
 };
 
+// TOGGLE LIGHT MODE CARDS FX
+function lightModeCards() {
+    const lightCards = document.getElementsByClassName("light-mode-card");
+    const darkCards = document.getElementsByClassName("dark-mode-card");
+    const isLightMode = document.body.classList.contains("light-mode");
+
+    for (let card of lightCards) {
+        card.style.display = isLightMode ? "block" : "none";
+    }
+
+    for (let card of darkCards) {
+        card.style.display = isLightMode ? "none" : "block";
+    }
+};
+
 // DRAW A CARD
 // Chooses a number between 1-10
 function drawCard() {
@@ -21,12 +36,13 @@ function startGameLogic() {
         drawCard();
     })
 
-    // LIGHT MODE TOGGLE BTN
+    // PLAYER CLICKS ON "LIGHT MODE" TOGGLE BTN
     const lightModeBtn = document.getElementById("light_mode_btn");
     if (lightModeBtn) {
         lightModeBtn.addEventListener("click", () => {
             console.log("Light Mode Button Clicked!"); // Debug log
             lightMode();
+            lightModeCards();
         });
     } else {
         console.error("Light mode button not found!"); // Debugging help
