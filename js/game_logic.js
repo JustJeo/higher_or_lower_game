@@ -10,20 +10,21 @@ function lightModeCards() {
     const isLightMode = document.body.classList.contains("light-mode");
 
     for (let card of lightCards) {
-        card.style.display = isLightMode ? "block" : "none";
+        card.style.display = isLightMode ? "initial" : "none";
     }
 
     for (let card of darkCards) {
-        card.style.display = isLightMode ? "none" : "block";
+        card.style.display = isLightMode ? "none" : "initial";
     }
 };
 
 // DRAW A CARD
 // Chooses a number between 1-10
 function drawCard() {
-    let randomCard = Math.floor(Math.random() * 10 + 1);
+    let randomCard = Math.floor(Math.random() * 3 + 1);
     if (randomCard == 1) {
-        document.getElementById("first_card").innerHTML = `<img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent_dark.png" alt="">`;
+        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent.png" alt="">
+        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent_dark.png" alt="">`;
     } else {
         document.getElementById("first_card").innerHTML = `${randomCard}`;
     }
