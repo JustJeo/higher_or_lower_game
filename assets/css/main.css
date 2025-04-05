@@ -20,10 +20,10 @@ body {
 }
 
 /* Cards */
-/* #test_card {
-    background-color: white;
+.light-mode-card {
+    display: none;
 }
-#test_card_dark {
+/* .dark-mode-card {
     background-color: gray;
 } */
 
