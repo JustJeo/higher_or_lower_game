@@ -22,7 +22,11 @@ function lightModeCards() {
 // Chooses a number between 1-10
 function drawCard() {
     let randomCard = Math.floor(Math.random() * 10 + 1);
-    document.getElementById("first_card").innerHTML = `${randomCard}`;
+    if (randomCard == 1) {
+        document.getElementById("first_card").innerHTML = `<img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_transparent_dark.png" alt="">`;
+    } else {
+        document.getElementById("first_card").innerHTML = `${randomCard}`;
+    }
 };
 
 function startGameLogic() {
