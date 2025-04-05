@@ -19,6 +19,14 @@ body {
     margin: 100px 0px;
 }
 
+/* Cards */
+/* #test_card {
+    background-color: white;
+}
+#test_card_dark {
+    background-color: gray;
+} */
+
 /* Game Container */
 #game_play_container {
     display: none;
