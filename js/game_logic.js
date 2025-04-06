@@ -33,19 +33,20 @@ function drawCard() {
         <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_3_dark.png" alt="">`;
     } else {
         document.getElementById("first_card").innerHTML = `${randomCard}`;
-    }
+    };
+    return randomCard;
 };
 
 function startGameLogic() {
     console.log("Game Logic Starts")
 
     // PLAYER CLICKS "START GAME" BTN
-    const startGame = document.getElementById("start_game_btn")
+    const startGame = document.getElementById("start_game_btn");
     startGame.addEventListener("click", () => {
         document.getElementById("start_game_btn").style.display = "none";
         document.getElementById("game_play_container").style.display = "block";
         drawCard();
-    })
+    });
 
     // PLAYER CLICKS ON "LIGHT MODE" TOGGLE BTN
     const lightModeBtn = document.getElementById("light_mode_btn");
@@ -57,7 +58,20 @@ function startGameLogic() {
         });
     } else {
         console.error("Light mode button not found!"); // Debugging help
-    }
+    };
+
+    // PLAYER CLICKS "HIGHER" BTN
+    const higherBtn = document.getElementById("higher_btn");
+    higherBtn.addEventListener("click", () => {
+        alert("You clicked the HIGHER btn");
+    });
+
+    // PLAYER CLICKS "LOWER" BTN
+    const lowerBtn = document.getElementById("lower_btn");
+    lowerBtn.addEventListener("click", () => {
+        alert("You clicked the LOWER btn");
+    });
+
 
 
 };
