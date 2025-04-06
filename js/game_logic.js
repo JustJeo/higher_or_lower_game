@@ -1,3 +1,7 @@
+// ~~~~~~~~~~ Variables ~~~~~~~~~~
+let firstCard = null;
+
+// ~~~~~~~~~~ Light Mode ~~~~~~~~~~
 // TOGGLE LIGHT MODE FX
 // Adds or removes class "light-mode" when btn is clicked.
 function lightMode() {
@@ -22,7 +26,8 @@ function lightModeCards() {
     }
 };
 
-// DRAW A CARD
+// ~~~~~~~~~~ Cards ~~~~~~~~~~
+// DRAW A CARD FX
 // Chooses a number between 1-10
 // Store card value in randomCard
 function drawCard() {
@@ -42,6 +47,10 @@ function drawCard() {
     return randomCard;
 };
 
+// COMPARE CARDS FX
+// Compares card value from first draw [when player hits "start" btn] and the second draw [when player hits either the "higher" or "lower" btn]
+
+// ~~~~~~~~~~ Game Logic ~~~~~~~~~~
 // GAME LOGIC STARTS
 function startGameLogic() {
     console.log("Game Logic Starts")
