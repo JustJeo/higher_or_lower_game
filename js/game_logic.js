@@ -63,12 +63,14 @@ function startGameLogic() {
     // PLAYER CLICKS "HIGHER" BTN
     const higherBtn = document.getElementById("higher_btn");
     higherBtn.addEventListener("click", () => {
+        drawCard();
         alert("You clicked the HIGHER btn");
     });
 
     // PLAYER CLICKS "LOWER" BTN
     const lowerBtn = document.getElementById("lower_btn");
     lowerBtn.addEventListener("click", () => {
+        drawCard();
         alert("You clicked the LOWER btn");
     });
 
