@@ -53,7 +53,8 @@ function startGameLogic() {
         document.getElementById("start_game_btn").style.display = "none";
         // Shows "Game Play" area
         document.getElementById("game_play_container").style.display = "block";
-        drawCard();
+        const currentCard = drawCard();
+        console.log("The first card drawn is: " + currentCard);
     });
 
     // PLAYER CLICKS ON "LIGHT MODE" TOGGLE BTN
@@ -68,14 +69,14 @@ function startGameLogic() {
     // PLAYER CLICKS "HIGHER" BTN
     const higherBtn = document.getElementById("higher_btn");
     higherBtn.addEventListener("click", () => {
-        drawCard();
-        alert("You clicked the HIGHER btn");
+        const currentCard = drawCard();
+        console.log("You chose higher. The next card drawn is: " + currentCard);
     });
 
     // PLAYER CLICKS "LOWER" BTN
     const lowerBtn = document.getElementById("lower_btn");
     lowerBtn.addEventListener("click", () => {
-        drawCard();
-        alert("You clicked the LOWER btn");
+        const currentCard = drawCard();
+        console.log("You chose lower. The next card drawn is: " + currentCard);
     });
 };
