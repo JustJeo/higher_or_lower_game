@@ -1,18 +1,22 @@
-// TOGGLE LIGHT MODE FX 
+// TOGGLE LIGHT MODE FX
+// Adds or removes class "light-mode" when btn is clicked.
 function lightMode() {
     document.body.classList.toggle("light-mode");
 };
 
 // TOGGLE LIGHT MODE CARDS FX
+// Checks if class "light-mode" is on
 function lightModeCards() {
+    const isLightMode = document.body.classList.contains("light-mode");
     const lightCards = document.getElementsByClassName("light-mode-card");
     const darkCards = document.getElementsByClassName("dark-mode-card");
-    const isLightMode = document.body.classList.contains("light-mode");
 
+    // If "light-mode" is on, then make lightCards visible
     for (let card of lightCards) {
         card.style.display = isLightMode ? "initial" : "none";
     }
 
+    // If "light-mode" is on, then make darkCards invisible
     for (let card of darkCards) {
         card.style.display = isLightMode ? "none" : "initial";
     }
@@ -20,6 +24,7 @@ function lightModeCards() {
 
 // DRAW A CARD
 // Chooses a number between 1-10
+// Store card value in randomCard
 function drawCard() {
     let randomCard = Math.floor(Math.random() * 3 + 1);
     if (randomCard == 1) {
@@ -37,13 +42,16 @@ function drawCard() {
     return randomCard;
 };
 
+// GAME LOGIC STARTS
 function startGameLogic() {
     console.log("Game Logic Starts")
 
     // PLAYER CLICKS "START GAME" BTN
     const startGame = document.getElementById("start_game_btn");
     startGame.addEventListener("click", () => {
+        // Hides "Start" btn
         document.getElementById("start_game_btn").style.display = "none";
+        // Shows "Game Play" area
         document.getElementById("game_play_container").style.display = "block";
         drawCard();
     });
@@ -52,12 +60,9 @@ function startGameLogic() {
     const lightModeBtn = document.getElementById("light_mode_btn");
     if (lightModeBtn) {
         lightModeBtn.addEventListener("click", () => {
-            console.log("Light Mode Button Clicked!"); // Debug log
             lightMode();
             lightModeCards();
         });
-    } else {
-        console.error("Light mode button not found!"); // Debugging help
     };
 
     // PLAYER CLICKS "HIGHER" BTN
@@ -73,7 +78,4 @@ function startGameLogic() {
         drawCard();
         alert("You clicked the LOWER btn");
     });
-
-
-
 };
