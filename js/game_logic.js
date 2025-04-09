@@ -32,18 +32,8 @@ function lightModeCards() {
 // Store card value in randomCard
 function drawCard() {
     let randomCard = Math.floor(Math.random() * 3 + 1);
-    if (randomCard == 1) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
-        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
-    } else if (randomCard == 2) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
-        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
-    } else if (randomCard == 3) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
-        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
-    } else {
-        document.getElementById("first_card").innerHTML = `${randomCard}`;
-    };
+    document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
+    <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
     return randomCard;
 };
 
