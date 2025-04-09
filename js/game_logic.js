@@ -31,9 +31,10 @@ function lightModeCards() {
 // Chooses a number between 1-10
 // Store card value in randomCard
 function drawCard() {
-    let randomCard = Math.floor(Math.random() * 3 + 1);
+    let randomCard = Math.floor(Math.random() * 10 + 1);
     document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
     <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
+    lightModeCards();
     return randomCard;
 };
 
