@@ -33,14 +33,14 @@ function lightModeCards() {
 function drawCard() {
     let randomCard = Math.floor(Math.random() * 3 + 1);
     if (randomCard == 1) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_light.png" alt="">
-        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_1_dark.png" alt="">`;
+        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
+        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
     } else if (randomCard == 2) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_2_light.png" alt="">
-        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_2_dark.png" alt="">`;
+        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
+        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
     } else if (randomCard == 3) {
-        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_3_light.png" alt="">
-        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_3_dark.png" alt="">`;
+        document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
+        <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
     } else {
         document.getElementById("first_card").innerHTML = `${randomCard}`;
     };
