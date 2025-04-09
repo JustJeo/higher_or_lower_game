@@ -28,13 +28,15 @@ function lightModeCards() {
 
 // ~~~~~~~~~~ Cards ~~~~~~~~~~
 // DRAW A CARD FX
-// Chooses a number between 1-10
-// Store card value in randomCard
 function drawCard() {
+    // Chooses a number between 1-10
     let randomCard = Math.floor(Math.random() * 10 + 1);
+    // Displays image corresponding to random number
     document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
     <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
+    // Invokes lightModeCards fx to know if cards should be displayed in light mode or dark mode to the player
     lightModeCards();
+    // Store card value in randomCard
     return randomCard;
 };
 
@@ -61,6 +63,7 @@ function startGameLogic() {
     const lightModeBtn = document.getElementById("light_mode_btn");
     if (lightModeBtn) {
         lightModeBtn.addEventListener("click", () => {
+            // Fxs to invoke
             lightMode();
             lightModeCards();
         });
