@@ -15,8 +15,14 @@ body {
     color: black;
 }
 
+/* Game Title */
 #game_title_container {
     margin: 100px 0px;
+}
+
+#big_game_title {
+    display: block;
+    font-size: 1.5em;
 }
 
 /* Cards */
@@ -27,7 +33,7 @@ body {
     background-color: gray;
 } */
 
-/* Game Container */
+/* Game Area */
 #game_play_container {
     display: none;
 }
