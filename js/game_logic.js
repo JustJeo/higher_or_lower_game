@@ -45,7 +45,7 @@ function compareCards(guess) {
     let newCard = drawCard();
 
     // Check if newCard === firstCard, if it is then redraw another card for newCard
-    if (firstCard === newCard) {
+    while (newCard === firstCard) {
         newCard = drawCard();
     };
 
@@ -61,6 +61,9 @@ function compareCards(guess) {
     } else {
         console.log("You chose wrong!");
     }
+
+    // Update firstCard for the next round.
+    firstCard = newCard;
 };
 // Compares card value from first draw [when player hits "start" btn] and the second draw [when player hits either the "higher" or "lower" btn]
 
