@@ -57,9 +57,9 @@ function compareCards(guess) {
         (guess === "higher" && newCard > firstCard) ||
         (guess === "lower" && newCard < firstCard)
     ) {
-        console.log("You chose correctly!");
+        document.getElementById("text_result").innerHTML = "<h2>You chose correctly.</h2>";
     } else {
-        console.log("You chose wrong!");
+        document.getElementById("text_result").innerHTML = "<h2>You chose wrong</h2>";
     }
 
     // Update firstCard for the next round.
