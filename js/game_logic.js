@@ -37,8 +37,8 @@ function drawCard() {
     // Invokes lightModeCards fx to know if cards should be displayed in light mode or dark mode to the player
     lightModeCards();
     // Store card value in randomCard
-    randomCard = firstCard;
-    return randomCard;
+    firstCard = randomCard;
+    return firstCard;
 };
 
 // COMPARE CARDS FX
@@ -50,6 +50,9 @@ function compareCards() {
     if (firstCard == newCard) {
         drawCard();
     };
+
+    console.log("The first card drawn was a " + firstCard);
+    console.log("The second card drawn was a " + newCard);
 };
 // Compares card value from first draw [when player hits "start" btn] and the second draw [when player hits either the "higher" or "lower" btn]
 
