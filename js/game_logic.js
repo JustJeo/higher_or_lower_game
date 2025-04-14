@@ -26,6 +26,11 @@ function darkModeCards() {
     }
 };
 
+// ~~~~~~~~~~ Rules ~~~~~~~~~~
+function showRules() {
+    document.body.classList.toggle("show-rules");
+};
+
 // ~~~~~~~~~~ Cards ~~~~~~~~~~
 // DRAW A CARD FX
 function drawCard() {
@@ -90,6 +95,15 @@ function startGameLogic() {
             // Fxs to invoke
             darkMode();
             darkModeCards();
+        });
+    };
+
+    // PLAYER CLICKS ON "RULES" BTN
+    const rulesBtn = document.getElementById("rules_btn");
+    if (rulesBtn) {
+        rulesBtn.addEventListener("click", () => {
+            console.log("The rules btn has been clicked!");
+            alert("The Rules Btn has been clicked!");
         });
     };
 

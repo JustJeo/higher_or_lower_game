@@ -15,6 +15,11 @@ body {
     color: white;
 }
 
+/* Rules */
+/* .show-rules {
+    background-color: gray;
+} */
+
 /* Game Title */
 #game_title_container {
     margin: 100px 0px;
