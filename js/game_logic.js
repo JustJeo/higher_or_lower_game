@@ -1,28 +1,28 @@
 // ~~~~~~~~~~ Variables ~~~~~~~~~~
 let firstCard = null;
 
-// ~~~~~~~~~~ Light Mode ~~~~~~~~~~
-// TOGGLE LIGHT MODE FX
-// Adds or removes class "light-mode" when btn is clicked.
-function lightMode() {
-    document.body.classList.toggle("light-mode");
+// ~~~~~~~~~~ Dark Mode ~~~~~~~~~~
+// TOGGLE DARK MODE FX
+// Adds or removes class "dark-mode" when btn is clicked.
+function darkMode() {
+    document.body.classList.toggle("dark-mode");
 };
 
-// TOGGLE LIGHT MODE CARDS FX
-// Checks if class "light-mode" is on
-function lightModeCards() {
-    const isLightMode = document.body.classList.contains("light-mode");
+// TOGGLE DARK MODE CARDS FX
+// Checks if class "dark-mode" is on
+function darkModeCards() {
+    const isDarkMode = document.body.classList.contains("dark-mode");
     const lightCards = document.getElementsByClassName("light-mode-card");
     const darkCards = document.getElementsByClassName("dark-mode-card");
 
-    // If "light-mode" is on, then make lightCards visible
-    for (let card of lightCards) {
-        card.style.display = isLightMode ? "initial" : "none";
+    // If "dark-mode" is on, then make darkCards visible
+    for (let card of darkCards) {
+        card.style.display = isDarkMode ? "initial" : "none";
     }
 
     // If "light-mode" is on, then make darkCards invisible
-    for (let card of darkCards) {
-        card.style.display = isLightMode ? "none" : "initial";
+    for (let card of lightCards) {
+        card.style.display = isDarkMode ? "none" : "initial";
     }
 };
 
@@ -34,8 +34,8 @@ function drawCard() {
     // Displays image corresponding to random number
     document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
     <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
-    // Invokes lightModeCards fx to know if cards should be displayed in light mode or dark mode to the player
-    lightModeCards();
+    // Invokes darkModeCards fx to know if cards should be displayed in light mode or dark mode to the player
+    darkModeCards();
     // Store card value
     return randomCard;
 };
@@ -83,13 +83,13 @@ function startGameLogic() {
         // console.log("The first card drawn is: " + firstCard);
     });
 
-    // PLAYER CLICKS ON "LIGHT MODE" TOGGLE BTN
-    const lightModeBtn = document.getElementById("light_mode_btn");
-    if (lightModeBtn) {
-        lightModeBtn.addEventListener("click", () => {
+    // PLAYER CLICKS ON "DARK MODE" TOGGLE BTN
+    const darkModeBtn = document.getElementById("dark_mode_btn");
+    if (darkModeBtn) {
+        darkModeBtn.addEventListener("click", () => {
             // Fxs to invoke
-            lightMode();
-            lightModeCards();
+            darkMode();
+            darkModeCards();
         });
     };
 

@@ -5,14 +5,14 @@
 
 body {
     padding: 1em 5em 10em;
-    background-color: gray;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /* Buttons */
-.light-mode {
-    background-color: white;
-    color: black;
+.dark-mode {
+    background-color: gray;
+    color: white;
 }
 
 /* Game Title */
@@ -26,12 +26,9 @@ body {
 }
 
 /* Cards */
-.light-mode-card {
+.dark-mode-card {
     display: none;
 }
-/* .dark-mode-card {
-    background-color: gray;
-} */
 
 /* Game Area */
 #game_play_container {
