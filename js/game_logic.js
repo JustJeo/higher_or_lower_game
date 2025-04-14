@@ -51,6 +51,16 @@ function compareCards(guess) {
 
     console.log("The first card drawn was a " + firstCard);
     console.log("The second card drawn is a " + newCard);
+
+    // Add logic to guesses
+    if (
+        (guess === "higher" && newCard > firstCard) ||
+        (guess === "lower" && newCard < firstCard)
+    ) {
+        console.log("You chose correctly!");
+    } else {
+        console.log("You chose wrong!");
+    }
 };
 // Compares card value from first draw [when player hits "start" btn] and the second draw [when player hits either the "higher" or "lower" btn]
 
