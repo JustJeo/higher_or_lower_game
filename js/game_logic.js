@@ -36,14 +36,12 @@ function drawCard() {
     <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
     // Invokes lightModeCards fx to know if cards should be displayed in light mode or dark mode to the player
     lightModeCards();
-    // Store card value in randomCard
-    firstCard = randomCard;
-    return firstCard;
+    // Store card value
+    return randomCard;
 };
 
 // COMPARE CARDS FX
 function compareCards() {
-    let firstCard = randomCard;
     let newCard = drawCard();
     // Draw another card for newCard
     // Check if newCard == firstCard, if it is then redraw another card for newCard
@@ -68,8 +66,8 @@ function startGameLogic() {
         document.getElementById("start_game_btn").style.display = "none";
         // Shows "Game Play" area
         document.getElementById("game_play_container").style.display = "block";
-        const currentCard = drawCard();
-        console.log("The first card drawn is: " + currentCard);
+        firstCard = drawCard();
+        console.log("The first card drawn is: " + firstCard);
     });
 
     // PLAYER CLICKS ON "LIGHT MODE" TOGGLE BTN
