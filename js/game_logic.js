@@ -41,16 +41,16 @@ function drawCard() {
 };
 
 // COMPARE CARDS FX
-function compareCards() {
+function compareCards(guess) {
     let newCard = drawCard();
-    // Draw another card for newCard
-    // Check if newCard == firstCard, if it is then redraw another card for newCard
-    if (firstCard == newCard) {
-        drawCard();
+
+    // Check if newCard === firstCard, if it is then redraw another card for newCard
+    if (firstCard === newCard) {
+        newCard = drawCard();
     };
 
     console.log("The first card drawn was a " + firstCard);
-    console.log("The second card drawn was a " + newCard);
+    console.log("The second card drawn is a " + newCard);
 };
 // Compares card value from first draw [when player hits "start" btn] and the second draw [when player hits either the "higher" or "lower" btn]
 
@@ -67,7 +67,7 @@ function startGameLogic() {
         // Shows "Game Play" area
         document.getElementById("game_play_container").style.display = "block";
         firstCard = drawCard();
-        console.log("The first card drawn is: " + firstCard);
+        // console.log("The first card drawn is: " + firstCard);
     });
 
     // PLAYER CLICKS ON "LIGHT MODE" TOGGLE BTN
