@@ -93,14 +93,12 @@ function startGameLogic() {
     // PLAYER CLICKS "HIGHER" BTN
     const higherBtn = document.getElementById("higher_btn");
     higherBtn.addEventListener("click", () => {
-        const currentCard = drawCard();
-        console.log("You chose higher. The next card drawn is: " + currentCard);
+        compareCards("higher");
     });
 
     // PLAYER CLICKS "LOWER" BTN
     const lowerBtn = document.getElementById("lower_btn");
     lowerBtn.addEventListener("click", () => {
-        const currentCard = drawCard();
-        console.log("You chose lower. The next card drawn is: " + currentCard);
+        compareCards("lower");
     });
 };
