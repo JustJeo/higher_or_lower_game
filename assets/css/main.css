@@ -19,9 +19,9 @@ body {
 }
 
 /* Rules */
-/* .show-rules {
-    background-color: gray;
-} */
+#rulesModal .modal-dialog {
+    color: black;
+}
 
 /* Game Title */
 #game_title_container {
