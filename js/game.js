@@ -15,7 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         fetch("sections/footer.html")
             .then(response => response.text())
-            .then(data => document.getElementById("footer").innerHTML = data)
+            .then(data => document.getElementById("footer").innerHTML = data),
+
+        fetch("sections/js_end_scripts.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("js_end_scripts").innerHTML = data)
          ]).then(() => {
             console.log("All Sections loaded.");
             setTimeout(startGameLogic, 100);

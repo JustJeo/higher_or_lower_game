@@ -99,13 +99,13 @@ function startGameLogic() {
     };
 
     // PLAYER CLICKS ON "RULES" BTN
-    const rulesBtn = document.getElementById("rules_btn");
-    if (rulesBtn) {
-        rulesBtn.addEventListener("click", () => {
-            console.log("The rules btn has been clicked!");
-            alert("The Rules Btn has been clicked!");
-        });
-    };
+    // const rulesBtn = document.getElementById("rules_btn");
+    // if (rulesBtn) {
+    //     rulesBtn.addEventListener("click", () => {
+    //         console.log("The rules btn has been clicked!");
+    //         alert("The Rules Btn has been clicked!");
+    //     });
+    // };
 
     // PLAYER CLICKS "HIGHER" BTN
     const higherBtn = document.getElementById("higher_btn");
