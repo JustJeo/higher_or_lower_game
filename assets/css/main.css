@@ -7,6 +7,9 @@ body {
     padding: 1em 5em 10em;
     background-color: white;
     color: black;
+    /* For Late Night Editing */
+    background-color: rgb(79, 79, 79);
+    color: white;
 }
 
 /* Buttons */
