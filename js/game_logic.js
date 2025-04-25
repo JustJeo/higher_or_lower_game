@@ -37,8 +37,8 @@ function drawCard() {
     // Chooses a number between 1-10
     let randomCard = Math.floor(Math.random() * 10 + 1);
     // Displays image corresponding to random number
-    document.getElementById("first_card").innerHTML = `<img class="light-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
-    <img class="dark-mode-card" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
+    document.getElementById("first_card").innerHTML = `<img class="light-mode-card animate__animated animate__flipInY" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_light.png" alt="">
+    <img class="dark-mode-card animate__animated animate__flipInY" src="assets/images/mvp_deck_cards/mvp_card_` + randomCard + `_dark.png" alt="">`;
     // Invokes darkModeCards fx to know if cards should be displayed in light mode or dark mode to the player
     darkModeCards();
     // Store card value
@@ -62,9 +62,9 @@ function compareCards(guess) {
         (guess === "higher" && newCard > firstCard) ||
         (guess === "lower" && newCard < firstCard)
     ) {
-        document.getElementById("text_result").innerHTML = "<h2>You chose correctly.</h2>";
+        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInDown animate__delay-1s'>You chose correctly.</h2>";
     } else {
-        document.getElementById("text_result").innerHTML = "<h2>You chose wrong</h2>";
+        document.getElementById("text_result").innerHTML = "<h2class='animate__animated animate__fadeInDown animate__delay-1s'>You chose wrong</h2>";
     }
 
     // Update firstCard for the next round.
