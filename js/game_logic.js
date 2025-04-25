@@ -62,9 +62,9 @@ function compareCards(guess) {
         (guess === "higher" && newCard > firstCard) ||
         (guess === "lower" && newCard < firstCard)
     ) {
-        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInDown animate__delay-1s'>You chose correctly.</h2>";
+        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose correctly.</h2>";
     } else {
-        document.getElementById("text_result").innerHTML = "<h2class='animate__animated animate__fadeInDown animate__delay-1s'>You chose wrong</h2>";
+        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose wrong.</h2>";
     }
 
     // Update firstCard for the next round.
