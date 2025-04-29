@@ -43,6 +43,10 @@ body {
     display: none;
 }
 
+#playing_field {
+    min-height: 250px;
+}
+
 /* Footer */
 #footer {
     position: absolute;
