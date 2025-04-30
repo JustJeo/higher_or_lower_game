@@ -12,17 +12,22 @@ body {
     color: white; */
 }
 
-/* Buttons */
+/* ~~~~~~~~~~ Buttons ~~~~~~~~~~ */
 .dark-mode {
     background-color: gray;
     color: white;
+}
+
+#start_game_btn {
+    margin-top: 100px;
 }
 
 #play_again_btn {
     display: none;
 }
 
-/* Rules */
+/* ~~~~~~~~~~ Sections ~~~~~~~~~~ */
+/* Rules Modal */
 #rulesModal .modal-dialog {
     color: black;
 }
@@ -30,7 +35,7 @@ body {
 
 /* Game Title */
 #game_title_container {
-    margin: 100px 0px;
+    margin: 100px 0px 25px;
 }
 
 .big-game-title {
