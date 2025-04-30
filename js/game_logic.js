@@ -114,4 +114,6 @@ function startGameLogic() {
     lowerBtn.addEventListener("click", () => {
         compareCards("lower");
     });
+
+    // PLAYER CLICKS "PLAY AGAIN" BTN
 };
