@@ -4,7 +4,7 @@
 }
 
 body {
-    padding: 1em 5em 10em;
+    padding: 1em 5em 5em;
     background-color: white;
     color: black;
     /* For Late Night Editing
@@ -55,6 +55,16 @@ body {
 
 #playing_field {
     min-height: 250px;
+}
+
+/* Play Again Btn */
+#play_again_button_container {
+    margin-top: 50px;
+}
+
+/* High Score */
+#high_score_container {
+    padding-top: 25px;
 }
 
 /* Footer */
