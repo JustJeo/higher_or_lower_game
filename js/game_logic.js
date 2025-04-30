@@ -1,6 +1,7 @@
 // ~~~~~~~~~~ Variables ~~~~~~~~~~
 let firstCard = null;
 let playerStreak = 0;
+let highScore = 0;
 
 // ~~~~~~~~~~ Dark Mode ~~~~~~~~~~
 // TOGGLE DARK MODE FX
@@ -77,6 +78,13 @@ function compareCards(guess) {
     firstCard = newCard;
 };
 // Compares card value from first draw [when player hits "start" btn] and the second draw [when player hits either the "higher" or "lower" btn]
+
+function updateHighScore() {
+    if (playerStreak > highScore) {
+        highScore = playerStreak;
+        return highScore;
+    }
+};
 
 // ~~~~~~~~~~ Game Logic ~~~~~~~~~~
 // GAME LOGIC STARTS

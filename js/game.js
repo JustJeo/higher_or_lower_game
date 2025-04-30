@@ -20,9 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("sections/js_end_scripts.html")
             .then(response => response.text())
             .then(data => document.getElementById("js_end_scripts").innerHTML = data)
-         ]).then(() => {
+        ])
+        .then(() => {
             console.log("All Sections loaded.");
+
+            const playAgain = document.getElementById("play_again_btn");
+                playAgain.addEventListener("click", () => {
+                // Updates Highscore
+                updateHighScore();
+                document.getElementById("high_score_text").innerHTML = "High Score = " + highScore;
+            });
+
             setTimeout(gameLogic, 100);
     });
 });
-
