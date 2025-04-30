@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(data => document.getElementById("js_end_scripts").innerHTML = data)
          ]).then(() => {
             console.log("All Sections loaded.");
-            setTimeout(startGameLogic, 100);
+            setTimeout(gameLogic, 100);
     });
 });
 

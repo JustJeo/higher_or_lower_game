@@ -70,6 +70,7 @@ function compareCards(guess) {
         document.getElementById("lower_btn").style.display = "none";
         document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose wrong.</h2>";
         document.getElementById("player_streak_text").innerHTML = "<h4 class='animate__animated animate__fadeInUp animate__delay-1s'>Player Streak = " + playerStreak + "</h4>";
+        document.getElementById("play_again_btn").style.display = "block";
     }
 
     // Update firstCard for the next round.
@@ -79,7 +80,7 @@ function compareCards(guess) {
 
 // ~~~~~~~~~~ Game Logic ~~~~~~~~~~
 // GAME LOGIC STARTS
-function startGameLogic() {
+function gameLogic() {
     console.log("Game Logic Starts")
 
     // PLAYER CLICKS "START GAME" BTN
@@ -116,4 +117,13 @@ function startGameLogic() {
     });
 
     // PLAYER CLICKS "PLAY AGAIN" BTN
+    const playAgain = document.getElementById("play_again_btn");
+    playAgain.addEventListener("click", () => {
+        // Hides "Start" btn
+        document.getElementById("play_again_btn").style.display = "none";
+        // Shows "Game Play" area
+        document.getElementById("game_play_container").style.display = "block";
+        firstCard = drawCard();
+        // console.log("The first card drawn is: " + firstCard);
+    });
 };
