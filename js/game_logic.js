@@ -1,6 +1,6 @@
 // ~~~~~~~~~~ Variables ~~~~~~~~~~
 let firstCard = null;
-let playerStreak = null;
+let playerStreak = 0;
 
 // ~~~~~~~~~~ Dark Mode ~~~~~~~~~~
 // TOGGLE DARK MODE FX
@@ -119,10 +119,15 @@ function gameLogic() {
     // PLAYER CLICKS "PLAY AGAIN" BTN
     const playAgain = document.getElementById("play_again_btn");
     playAgain.addEventListener("click", () => {
-        // Hides "Start" btn
+        // Hides "Play Again" btn
         document.getElementById("play_again_btn").style.display = "none";
-        // Shows "Game Play" area
-        document.getElementById("game_play_container").style.display = "block";
+        // Shows "Higher" and "Lower" Btns Again
+        document.getElementById("higher_btn").style.display = "initial";
+        document.getElementById("lower_btn").style.display = "initial";
+        // Reset Elements
+        playerStreak = 0;
+        document.getElementById("text_result").innerHTML = "";
+        document.getElementById("player_streak_text").innerHTML = "";
         firstCard = drawCard();
         // console.log("The first card drawn is: " + firstCard);
     });
