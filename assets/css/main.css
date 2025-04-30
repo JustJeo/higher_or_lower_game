@@ -5,7 +5,11 @@
 
 body {
     padding: 1em 5em 10em;
-    background-image: url("/higher_or_lower_game/assets/images/arrow_wallpaper.png");
+    background-color: white;
+    color: black;
+    /* For Late Night Editing
+    background-color: rgb(79, 79, 79);
+    color: white; */
 }
 
 /* Buttons */
@@ -19,14 +23,6 @@ body {
     color: black;
 }
 
-/* Game Page */
-#game_page {
-    background-color: white;
-    color: black;
-    /* For Late Night Editing */
-    background-color: rgb(79, 79, 79);
-    color: white;
-}
 
 /* Game Title */
 #game_title_container {
