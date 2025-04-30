@@ -18,6 +18,10 @@ body {
     color: white;
 }
 
+#play_again_btn {
+    display: none;
+}
+
 /* Rules */
 #rulesModal .modal-dialog {
     color: black;
