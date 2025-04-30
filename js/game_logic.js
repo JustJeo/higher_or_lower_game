@@ -60,10 +60,11 @@ function compareCards(guess) {
     // Add logic to guesses
     if (
         (guess === "higher" && newCard > firstCard) ||
-        (guess === "lower" && newCard < firstCard)
-    ) {
+        (guess === "lower" && newCard < firstCard)) {
         document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose correctly.</h2>";
     } else {
+        document.getElementById("higher_btn").style.display = "none";
+        document.getElementById("lower_btn").style.display = "none";
         document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose wrong.</h2>";
     }
 
