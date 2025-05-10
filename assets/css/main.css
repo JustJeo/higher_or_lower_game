@@ -57,9 +57,14 @@ body {
     min-height: 250px;
 }
 
+#text_to_player {
+    min-height: 100px;
+}
+
 /* Play Again Btn */
 #play_again_button_container {
     margin-top: 50px;
+    min-height: 40px;
 }
 
 /* High Score */
