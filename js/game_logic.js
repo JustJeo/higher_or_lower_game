@@ -64,12 +64,12 @@ function compareCards(guess) {
        (guess === "higher" && newCard > firstCard) ||
        (guess === "lower" && newCard < firstCard)) {
         playerStreak++;
-        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose correctly.</h2>";
+        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose correctly</h2>";
         document.getElementById("player_streak_text").innerHTML = "<h4 class='animate__animated animate__fadeInUp animate__delay-1s'>Player Streak = " + playerStreak + "</h4>";
     } else {
         document.getElementById("higher_btn").style.display = "none";
         document.getElementById("lower_btn").style.display = "none";
-        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose wrong.</h2>";
+        document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose wrong</h2>";
         document.getElementById("player_streak_text").innerHTML = "<h4 class='animate__animated animate__fadeInUp animate__delay-1s'>Player Streak = " + playerStreak + "</h4>";
         document.getElementById("play_again_btn").style.display = "initial";
     }
