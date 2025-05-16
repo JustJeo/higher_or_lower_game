@@ -8,6 +8,7 @@ let highScore = 0;
 // Adds or removes class "dark-mode" when btn is clicked.
 function darkMode() {
     document.body.classList.toggle("dark-mode");
+    document.getElementById("game_page").classList.toggle("dark-mode-game");
 };
 
 // TOGGLE DARK MODE CARDS FX
