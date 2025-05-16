@@ -54,23 +54,17 @@ body {
     color: black;
 }
 
-
-/* Game Title */
-#game_title_container {
-    margin: 100px 0px 25px;
-}
-
 .big-game-title {
     display: block;
     /* font-size: 1.5em; */
 }
 
-/* Cards */
-.dark-mode-card {
-    display: none;
+/* Game Area */
+#game_page {
+    padding-top: 50px;
+    background-color: white;
 }
 
-/* Game Area */
 #game_play_container {
     display: none;
 }
@@ -81,6 +75,11 @@ body {
 
 #text_to_player {
     min-height: 100px;
+}
+
+/* Cards */
+.dark-mode-card {
+    display: none;
 }
 
 /* Play Again Btn */
