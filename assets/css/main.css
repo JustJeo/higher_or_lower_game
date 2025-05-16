@@ -116,4 +116,8 @@ body {
 
 #version_number_and_slogan small {
     display: block;
+    background-color: white;
+    padding: 3px;
+    border: solid black 2px;
+    border-radius: 10px;
 }
