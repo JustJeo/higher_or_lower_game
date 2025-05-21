@@ -47,7 +47,7 @@ body {
 }
 
 #start_game_btn {
-    margin-top: 100px;
+    margin: 50px;
 }
 
 #play_again_btn {
@@ -92,12 +92,14 @@ body {
 
 /* Play Again Btn */
 #play_again_button_container {
+    display: none;
     margin-top: 10px;
     min-height: 40px;
 }
 
 /* High Score */
 #high_score_container {
+    display: none;
     padding: 25px;
 }
 

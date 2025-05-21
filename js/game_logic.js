@@ -72,7 +72,9 @@ function compareCards(guess) {
         document.getElementById("lower_btn").style.display = "none";
         document.getElementById("text_result").innerHTML = "<h2 class='animate__animated animate__fadeInUp animate__delay-1s'>You chose wrong</h2>";
         document.getElementById("player_streak_text").innerHTML = "<h4 class='animate__animated animate__fadeInUp animate__delay-1s'>Player Streak = " + playerStreak + "</h4>";
+        document.getElementById("play_again_button_container").style.display = "block";
         document.getElementById("play_again_btn").style.display = "initial";
+        document.getElementById("high_score_container").style.display = "block";
     }
 
     // Update firstCard for the next round.
