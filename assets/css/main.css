@@ -55,14 +55,19 @@ body {
 }
 
 /* ~~~~~~~~~~ Sections ~~~~~~~~~~ */
+/* Top btns */
+#dark_mode_container {
+    padding-bottom: 50px;
+}
+
 /* Rules Modal */
 #rulesModal .modal-dialog {
     color: black;
 }
 
+/* Game Title */
 .big-game-title {
     display: block;
-    /* font-size: 1.5em; */
 }
 
 /* Game Area */
