@@ -125,12 +125,14 @@ body {
 #version_number_and_slogan {
     margin: 25px 15px;
     color: black;
+    display: flex;
+    justify-content: center;
 }
 
 #version_number_and_slogan small {
-    display: block;
+    display: inline-block;
     background-color: white;
-    padding: 3px;
+    padding: 3px 5px;
     border: solid black 2px;
     border-radius: 10px;
 }
