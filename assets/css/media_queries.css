@@ -4,6 +4,40 @@
     body {
         padding: 1em;
     }
+
+    /* Fonts */
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Card Imgs */
+    #playing_field img {
+        width: 50%;
+    }
+
+    /* ~~~~~~~~~~~~~~ Sections ~~~~~~~~~~~~~~ */
+    /* Top Btns */
+    #dark_mode_container {
+        padding-bottom: 15px;
+    }
+
+    /* Game Area */
+    #game_page {
+        padding-top: 15px;
+    }
+
+    #playing_field {
+        min-height: 0;
+    }
+
+    /* High Score */
+    #high_score_container {
+        padding: 15px;
+    }
 }
 
 
