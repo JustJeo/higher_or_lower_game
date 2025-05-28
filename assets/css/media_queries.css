@@ -26,7 +26,7 @@
     /* Btns */
     .btn-lg {
         font-size: 1.10rem;
-        padding: .40rem .75rem;
+        padding: .30rem .75rem;
     }
 
     #start_game_btn {
@@ -46,6 +46,11 @@
 
     #playing_field {
         min-height: 220px;
+    }
+
+    /* Text To Players */
+    #text_to_player {
+        min-height: 85px;
     }
 
     /* High Score */
