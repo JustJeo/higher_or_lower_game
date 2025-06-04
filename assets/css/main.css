@@ -109,7 +109,7 @@ body {
 #play_again_button_container {
     display: none;
     margin-top: 10px;
-    min-height: 40px;
+    min-height: 50px;
 }
 
 /* High Score */
