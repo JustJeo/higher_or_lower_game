@@ -19,11 +19,6 @@
     }
 
     /* Btns */
-    .btn-lg {
-        font-size: 1.10rem;
-        padding: .30rem .75rem;
-    }
-
     #start_game_btn {
         margin: 30px;
     }
