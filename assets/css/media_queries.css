@@ -75,7 +75,7 @@
     }
 
     .container {
-        max-width: 940px;
+        max-width: 720px;
     }
 
     /* Fonts */
@@ -93,7 +93,7 @@
 
     /* Card Imgs */
     #playing_field img {
-        width: 50%;
+        width: 75%;
     }
 
     /* Btns */
