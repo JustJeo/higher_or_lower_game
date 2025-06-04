@@ -22,11 +22,6 @@
         font-size: .75em;
     }
 
-    /* Card Imgs */
-    #playing_field img {
-        width: 50%;
-    }
-
     /* Btns */
     .btn-lg {
         font-size: 1.10rem;
@@ -75,7 +70,7 @@
     }
 
     .container {
-        max-width: 720px;
+        max-width: 860px;
     }
 
     /* Fonts */
@@ -89,11 +84,6 @@
 
     small {
         font-size: .75em;
-    }
-
-    /* Card Imgs */
-    #playing_field img {
-        width: 75%;
     }
 
     /* Btns */
