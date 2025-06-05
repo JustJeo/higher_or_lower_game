@@ -263,9 +263,9 @@
     } */
 
     /* Card Imgs */
-    /* #playing_field img {
-        width: 100%;
-    } */
+    #playing_field img {
+        min-width: 170px;
+    }
 
     /* Btns */
     .btn-lg {
