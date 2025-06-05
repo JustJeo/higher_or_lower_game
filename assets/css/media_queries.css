@@ -245,6 +245,11 @@
         padding: 1em;
     }
 
+    #background_left,
+    #background_right {
+        background-size: initial;
+    }
+
     .container {
         max-width: 960px;
     }
