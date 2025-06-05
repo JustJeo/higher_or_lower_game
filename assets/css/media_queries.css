@@ -56,9 +56,9 @@
         padding: 1em;
     }
 
-    .container {
+    /* .container {
         max-width: 860px;
-    }
+    } */
 
     /* Fonts */
     h1 {
@@ -74,10 +74,10 @@
     }
 
     /* Btns */
-    .btn-lg {
+    /* .btn-lg {
         font-size: 1.10rem;
         padding: .30rem .75rem;
-    }
+    } */
 
     #start_game_btn {
         margin: 30px;
@@ -94,18 +94,18 @@
         padding-top: 15px;
     }
 
-    #playing_field {
+    /* #playing_field {
         min-height: 220px;
-    }
+    } */
 
     /* Text To Players */
     #text_to_player {
         min-height: 80px;
     }
 
-    #play_again_button_container {
+    /* #play_again_button_container {
         min-height: 40px;
-    }
+    } */
 
     /* High Score */
     #high_score_container {
