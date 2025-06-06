@@ -326,6 +326,58 @@
     body {
         padding: 1em;
     }
+
+    .container {
+        max-width: 960px;
+    }
+
+    /* Fonts */
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    small {
+        font-size: .75em;
+    }
+
+    /* Card Imgs */
+    /* #playing_field img {
+        width: 50%;
+    } */
+
+    /* Btns */
+    #start_game_btn {
+        margin: 30px;
+    }
+
+    /* ~~~~~~~~~~~~~~ Sections ~~~~~~~~~~~~~~ */
+    /* Top Btns */
+    #dark_mode_container {
+        padding-bottom: 15px;
+    }
+
+    /* Game Area */
+    #game_page {
+        padding-top: 15px;
+    }
+
+    /* #playing_field {
+        min-height: 220px;
+    } */
+
+    /* Text To Players */
+    #text_to_player {
+        min-height: 85px;
+    }
+
+    /* High Score */
+    #high_score_container {
+        padding: 15px;
+    }
 }
 
 
@@ -339,5 +391,67 @@
     /* ~~~~~~~~~~~~~~ General ~~~~~~~~~~~~~~ */
     body {
         padding: 1em;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    /* Fonts */
+    /* h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    small {
+        font-size: .75em;
+    } */
+
+    /* Card Imgs */
+    #playing_field img {
+        min-width: 170px;
+    }
+
+    /* Btns */
+    .btn-lg {
+        padding: .35rem .75rem;
+        font-size: 1.10rem;
+    }
+
+    #start_game_btn {
+        margin: 30px;
+    }
+
+    #higher_btn,
+    #lower_btn {
+        padding: .35rem .75rem;
+    }
+
+    /* ~~~~~~~~~~~~~~ Sections ~~~~~~~~~~~~~~ */
+    /* Top Btns */
+    #dark_mode_container {
+        padding-bottom: 15px;
+    }
+
+    /* Game Area */
+    #game_page {
+        padding-top: 15px;
+    }
+
+    /* #playing_field {
+        min-height: 220px;
+    } */
+
+    /* Text To Players */
+    #text_to_player {
+        min-height: 85px;
+    }
+
+    /* High Score */
+    #high_score_container {
+        padding: 15px;
     }
 }
