@@ -492,13 +492,13 @@
 
     /* Text To Players */
     #text_to_player {
-        min-height: 70px;
+        min-height: 85px;
     }
 
     /* Play Again */
     #play_again_button_container {
         margin-top: 0;
-        min-height: 40px;
+        /* min-height: 40px; */
     }
 
     /* High Score */
