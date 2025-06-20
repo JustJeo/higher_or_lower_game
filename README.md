@@ -3,9 +3,9 @@
 Will the next card be higher or lower? THAT is the question that beats the game. Seems simple right? Will you be able to guess right and win the game or will you guess wrong and lose? Give it a try and find out. It only takes a few seeconds to complete a game.
 
 ## How To Play
-Players are presented with a single card between the numbers 1-10 and are then prompted the question that is the name of the game. Higher or Lower? Once the player has picked an answer, a new card will be drawn from the deck.
+Players are presented with a single card between the numbers 1-10 and are then prompted the question that is the name of the game. Higher or Lower? Once the player has picked an answer, a new card will be drawn from the deck. There is no way for the game to chose the same number again.
 
-If the player is correct in their guess, they win the game. If the player is incorrect in their guess, then they lose the game. There is no way for the game to chose the same number again.
+If the player is correct in their guess, a new card will be drawn and the game will continue. If the player is incorrect in their guess, then the game ends. A player streak is updated if the player scores a higher amount than in their last game. A "Play Again" button will then appear for players to start a new game.
 
 ## Game Logic
 - Players will have a "Start" button to activate the game.
@@ -28,6 +28,7 @@ A random card will be pulled from the deck and displayed to the player. Once the
 - CSS
 - JavaScript
 - Bootstrap Vers 5.3
+- Bootstrap Animation
 
 ## Motivation
 I love video games and decided that I wanted to create one. It had been a while since I've made a web browser game and wanted to start with something simple and small. I told myself that if I could create this little game then I'd be capable of creating more complex games in the future.
