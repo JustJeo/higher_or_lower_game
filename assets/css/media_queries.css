@@ -458,9 +458,9 @@
     }
 
     /* Card Imgs */
-    #playing_field img {
-        width: 100%;
-    }
+    /* #playing_field img {
+        width: 50%;
+    } */
 
     /* Btns */
     #start_game_btn {
@@ -471,9 +471,9 @@
         padding: .25rem .75rem;
     } */
 
-    #higher_btn, #lower_btn {
+    /* #higher_btn, #lower_btn {
         padding: .35rem .85rem;
-    }
+    } */
 
     /* ~~~~~~~~~~~~~~ Sections ~~~~~~~~~~~~~~ */
     /* Top Btns */
@@ -488,6 +488,12 @@
 
     #playing_field {
         min-height: 185px;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    #playing_field .col {
+        margin: 5px;
     }
 
     /* Text To Players */
@@ -502,7 +508,7 @@
     }
 
     /* High Score */
-    /* #high_score_container {
-        padding: 5px;
-    } */
+    #high_score_container {
+        padding: 10px;
+    }
 }
