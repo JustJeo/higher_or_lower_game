@@ -1,6 +1,6 @@
 # Higher Or Lower
 
-Will the next card be higher or lower? THAT is the question that beats the game. Seems simple right? Will you be able to guess right and win the game or will you guess wrong and lose? Give it a try and find out. It only takes a few seeconds to complete a game.
+Will the next card be higher or lower? THAT is the question for this game. Seems simple right? Will you be able to guess right and keep your streak going or will you guess wrong and lose? Give it a try and find out. What's your highest player streak?
 
 ## How To Play
 Players are presented with a single card between the numbers 1-10 and are then prompted the question that is the name of the game. Higher or Lower? Once the player has picked an answer, a new card will be drawn from the deck. There is no way for the game to chose the same number again.
