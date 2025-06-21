@@ -515,4 +515,19 @@
     #high_score_container {
         padding: 10px;
     }
+
+    /* Footer */
+    #footer {
+        left: initial;
+        bottom: initial;
+        top: 0px;
+    }
+
+    #version_number_and_slogan {
+        margin: .35em .5em;
+    }
+
+    #version_number_and_slogan small {
+        padding: 0px 5px;
+    }
 }
