@@ -3,17 +3,18 @@
 Will the next card be higher or lower? THAT is the question for this game. Seems simple right? Will you be able to guess right and keep your streak going or will you guess wrong and lose? Give it a try and find out. What's your highest player streak?
 
 ## How To Play
-Players are presented with a single card between the numbers 1-10 and are then prompted the question that is the name of the game. Higher or Lower? Once the player has picked an answer, a new card will be drawn from the deck. There is no way for the game to chose the same number again.
+Players are presented with a single card between the numbers 1-10 and are then prompted the question that is the name of the game. Higher or Lower? Players must make a guess if the next card drawn will be higher or lower than the card presented to them. Once the player has picked an answer, a new card will be automatically drawn. All cards drawn are randomly generated. There is no way for the game to chose the same number again.
 
-If the player is correct in their guess, a new card will be drawn and the game will continue. If the player is incorrect in their guess, then the game ends. A player streak is updated if the player scores a higher amount than in their last game. A "Play Again" button will then appear for players to start a new game.
+If the player is correct in their guess, the game will continue. If the player is incorrect in their guess, then the game ends. A player streak is updated if the player scores a higher amount than in their last game. A "Play Again" button will appear for players to start a new game and try for a higher score.
 
 ## Game Logic
 - Players will have a "Start" button to activate the game.
 - Players will then be presented with a single card in the middle and two buttons on either side of the card to choose from.
 - When either of the two buttons is clicked on, a new card from the deck will be drawn.
-- Players who choose "Lower" and receive a card that is lower than the presented card will win.
-- Players who choose "Higher" and receive a card that is higher than the presented card will win.
+- Players who choose "Lower" and receive a card that is lower than the presented card will win and the game will continue.
+- Players who choose "Higher" and receive a card that is higher than the presented card will win and the game will continue.
 - Players who choose a button and receive a card opposite of their prediction will lose the game.
+- The Player Streak will update if the player has a better high score than the last game.
 - A "Play Again" button will appear when the game is over that players can click on to start the whole process over again.
 
 ## Wireframing
