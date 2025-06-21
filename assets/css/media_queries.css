@@ -487,17 +487,17 @@
     }
 
     #playing_field {
-        min-height: 375px;
+        min-height: 350px;
         flex-direction: column;
-        margin: 5px;
+        margin: 10px;
     }
 
-    #playing_field .col {
+    /* #playing_field .col {
         margin: 5px;
-    }
+    } */
 
     #playing_field #first_card {
-        min-height: 245px;
+        min-height: 225px;
     }
 
     /* Text To Players */
